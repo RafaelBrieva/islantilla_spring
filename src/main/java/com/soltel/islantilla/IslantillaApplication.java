@@ -9,25 +9,31 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IslantillaApplication {
 	
-	@RequestMapping (Value="/")
-	public Sting index() {
+	@RequestMapping (value= "/")
+	public String index() {
 		return "<h1>Bienvenido a Islantilla!</h1>";
-		
-
-	@RequestMapping (Value="/")
-	public Sting index() {
-		return "<h1>Menu Principal</h1>";
-		}
-	
-	@RequestMapping (Value="/")
-	public Sting index() {
-		return "<h1>Menu Principal</h1>";
-		}
+			
 	}
+	
+	
+	@RequestMapping (value= "/menu")
+	public String menu() {
+		return "<h1>Bienvenido a Islantilla!</h1>";
+			
+	}
+
+	@RequestMapping (value= "/fin")
+	public String fin() {
+		return "<h1>Fin Aplicación</h1>";
+			
+	}
+
+	
+
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(IslantillaApplication.class, args);
-		
 	}
 
 }
