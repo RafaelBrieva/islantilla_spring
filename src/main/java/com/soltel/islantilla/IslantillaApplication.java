@@ -14,14 +14,13 @@ public class IslantillaApplication {
 		return "<h1>Bienvenido a Islantilla!</h1>";
 			
 	}
-	
-	
+		
 	@RequestMapping (value= "/menu")
 	public String menu() {
-		return "<h1>Bienvenido a Islantilla!</h1>";
+		return "<h1>Menú de Islantilla!</h1>";
 			
 	}
-
+	
 	@RequestMapping (value= "/fin")
 	public String fin() {
 		return "<h1>Fin Aplicación</h1>";
@@ -29,9 +28,6 @@ public class IslantillaApplication {
 	}
 
 	
-
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(IslantillaApplication.class, args);
 	}
